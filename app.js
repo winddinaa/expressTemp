@@ -39,6 +39,10 @@ app.get("/", (req, res) => {
   res.send("Hello World! API already use");
 });
 
+app.get("/about", (req, res) => {
+  res.send("Hello about route");
+});
+
 app.get("/signup", (req, res, next) => {
   let options = {
     root: __dirname,
